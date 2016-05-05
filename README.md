@@ -1,11 +1,10 @@
 
-![babel-plugin-\_\_coverage\_\_](http://i.imgur.com/WNq6pvg.png)
-=============================
+# babel-plugin-instrument-istanbul
 
-[![npm version](https://badge.fury.io/js/babel-plugin-__coverage__.svg)](https://badge.fury.io/js/babel-plugin-__coverage__)
-[![npm downloads](https://img.shields.io/npm/dm/babel-plugin-__coverage__.svg)](https://www.npmjs.com/package/babel-plugin-__coverage__)
-[![Build Status](https://travis-ci.org/dtinth/babel-plugin-__coverage__.svg?branch=master)](https://travis-ci.org/dtinth/babel-plugin-__coverage__)
-[![codecov.io](https://codecov.io/github/dtinth/babel-plugin-__coverage__/coverage.svg?branch=master)](https://codecov.io/github/dtinth/babel-plugin-__coverage__?branch=master)
+[![npm version](https://badge.fury.io/js/babel-plugin-instrument-istanbul.svg)](https://badge.fury.io/js/babel-plugin-instrument-istanbul)
+[![npm downloads](https://img.shields.io/npm/dm/babel-plugin-instrument-istanbul.svg)](https://www.npmjs.com/package/babel-plugin-instrument-istanbul)
+[![Build Status](https://travis-ci.org/rtsao/babel-plugin-instrument-istanbul.svg?branch=master)](https://travis-ci.org/rtsao/babel-plugin-instrument-istanbul)
+[![codecov.io](https://codecov.io/github/rtsao/babel-plugin-instrument-istanbul/coverage.svg?branch=master)](https://codecov.io/github/rtsao/babel-plugin-instrument-istanbul?branch=master)
 ![MIT Licensed](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
 A Babel plugin that instruments your code with `__coverage__` variable.
@@ -21,7 +20,7 @@ To integrate with testing tools, please see the [Integrations](#integrations) se
 Install it:
 
 ```
-npm install --save-dev babel-plugin-__coverage__
+npm install --save-dev babel-plugin-instrument-istanbul
 ```
 
 Add it to `.babelrc` in test mode:
@@ -118,7 +117,7 @@ __Note:__ If you’re using babel-plugin-\_\_coverage\_\_ inside a larger-scale 
 Sometimes there’s so much logic in a single statement (usually due to functional programming techniques),
 it is very likely that not every part of a statement will be covered by tests (see picture below).
 Since most coverage service only cares about statement coverage, and I want coverage numbers to be very frank,
-`babel-plugin-__coverage__` will treat certain expressions as statements.
+`babel-plugin-instrument-istanbul` will treat certain expressions as statements.
 
 Most likely, this means __if you switch to this plugin your coverage percentage will most likely go down__ compared to when you were using Istanbul or Isparta. But if you use a lot of arrow functions, this means your coverage will be more accurate! Here’s an example from the [bemusic/bemuse](https://github.com/bemusic/bemuse) project:
 

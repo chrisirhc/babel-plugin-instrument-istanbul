@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-__coverage__",
+  "name": "babel-plugin-instrument-istanbul",
   "version": "0.111111.1",
   "description": "Babel 6.x plugin to add instrument code with Istanbul-compatible `__coverage__` variable.",
   "main": "lib/index.js",
@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dtinth/babel-plugin-__coverage__.git"
+    "url": "git+https://github.com/rtsao/babel-plugin-instrument-istanbul.git"
   },
   "keywords": [
     "babel",
@@ -58,7 +58,7 @@
     "unit"
   ],
   "bugs": {
-    "url": "https://github.com/dtinth/babel-plugin-__coverage__/issues"
+    "url": "https://github.com/rtsao/babel-plugin-instrument-istanbul/issues"
   },
-  "homepage": "https://github.com/dtinth/babel-plugin-__coverage__#readme"
+  "homepage": "https://github.com/rtsao/babel-plugin-instrument-istanbul#readme"
 }
