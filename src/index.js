@@ -243,7 +243,7 @@ module.exports = function ({ types: t }) {
       if (p.node.test) {
         instrumentStatement(this, p.get('test'))
       }
-      p.node.consequent.unshift(increase(this, 'b', id, index++))
+      p.node.consequent.unshift(t.expressionStatement(increase(this, 'b', id, index++)))
     })
   }
 
